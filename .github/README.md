@@ -15,9 +15,10 @@
 > If you just need to quickly install the library to play around with it, install packages `1log` and `1log-rxjs` and add the following imports:
 >
 > ```ts
-> import '1log/defaultConfig';
 > import '1log-rxjs/defaultConfig';
-> import { log } from '1log';
+> import { installPlugins, log } from '1log';
+> import { observablePlugin } from '1log-rxjs';
+> installPlugins(observablePlugin);
 > ```
 
 Assuming you have RxJS installed,
